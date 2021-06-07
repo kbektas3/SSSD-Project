@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Password</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Renew Password here</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form method="POST" action="/rest/renew" id="renew-form">
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="New password" id="password"
+                            name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="New password" id="repeat" name="repeat"
+                            required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" id="submit-renew" class="btn btn-primary">SUBMIT</button>
+                        <a href="/#login">LOG IN</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

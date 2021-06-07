@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h1 class="text-center">LOG IN</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                    <form method="POST" action="/rest/login" id="login-form">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="username" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="auth" required>
+                                <option value="sms">SMS CODE</option>
+                                <option value="qr">Google Authenticator Code</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-between" id="after-captcha">
+                            
+                            <a href="/SSSD/#register">REGISTER HERE!</a>
+                            <button type="submit" id="submit-login" class="btn btn-primary">Submit</button>
+                            <a href="/SSSD/#reset">RESET PASSWORD</a>
+                        </div>
+                        
+                    </form>
+                    
+            </div>
+        </div>
+    
+    </div>
+
+   
+
+    <!--js-->
+    
+    <script src="./views/login.js"></script>
+</body>
+</html>

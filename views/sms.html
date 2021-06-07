@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h1 class="text-center">SMS Verification</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                    <form method="POST" action="/rest/sms" id="sms-form">
+                        <div class="form-group">
+                            <input class="form-control" type="number" placeholder="input number sent via sms" id="code" name="code" required>
+                        </div>
+                        <button type="submit" id="submit-sms" class="btn btn-primary">SUBMIT</button>
+                    </form>
+            </div>
+        </div>
+    
+    </div>
+
+   
+
+    <!--js-->
+    
+    <script src="./views/sms.js"></script>
+</body>
+</html>

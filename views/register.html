@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">REGISTER </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form method="POST" action="/rest/register" id="register-form">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="name" id="name" name="name" required
+                            validate>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" placeholder="email" id="email" name="email" required
+                            validate>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="username" id="username" name="username"
+                            required validate>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="number" placeholder="phone number" id="mobile" name="mobile"
+                            required validate>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="password" id="password" name="password"
+                            required validate>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="repeat password" id="rpass"
+                            name="rpass" required validate>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        <a href="/SSSD/#login">LOG IN</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+<!--js-->
+<script src="./views/register.js"></script>
+</body>
+
+</html>
